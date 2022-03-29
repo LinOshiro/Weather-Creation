@@ -28,14 +28,14 @@
     <h1>Weather Forecast</h1>
     <hr />
     <ul> 
-          <li class="date-time" id = "date">
+        <li class="date-time" id = "date">
               Last updated: February 24, 2022
           </li>
         <li class="date-time" id= "time">12:32 PM</li>
       </ul>
-    <form  
-    class="search-form" 
-    id = "search-city">
+     <form 
+      class="search-form" 
+      id = "search-city">
         <input 
         type= "search" 
         placeholder="Search Location..." 
@@ -65,21 +65,19 @@
             <li id="description">
               Cloudy
             </li>
-            <li <strong id="temperature">74°F</strong>
+            <li> <span class = "temp" id="temperature">74</span>
           <span class = "units"></span>
            <a href="#" id="fahrenheit-link">°F</a> | 
-          <a href="#" id="celsius-link">°C</a></span>
+          <a href="#" id="celsius-link">°C</a></span></div>
             </li>
           <li>
-            Humidity: <span id="humidity"></span>%
+            <span id="humidity"></span>
           </li>
-          <li>Wind: <span id= "wind"></span>m/h</li>
+          <li><span id= "wind"></span></li>
         </ul>
       </div>
-    
       <div class="weather-forecast"
       id="forecast"></div>
-    
 <hr/>
 <h4>
   5 Day Forecast
