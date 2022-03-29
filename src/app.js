@@ -1,4 +1,4 @@
-function updateDateTime() {
+function updateDateTime(timestamp) {
   let todaysDate = new Date();
 
   let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
@@ -39,6 +39,7 @@ function updateDateTime() {
   currentTime.innerHTML = `${hour}:${minutes}`;
 }
 updateDateTime();
+
 
 //function convertToFahrenheit(event) {
 // event.preventDefault();

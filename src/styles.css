@@ -29,17 +29,11 @@ h3 {
 }
 h4 {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 30px;
 }
 h5 {
   padding: 20px;
   font-size: 22px;
-}
-li:first-letter {
-  text-transform: capitalize;
-}
-.overview {
-  margin-bottom: 20px;
 }
 .weather-app {
   border: 1px solid;
@@ -58,6 +52,10 @@ li:first-letter {
   text-align: center;
   margin: 0 auto;
   padding: 10px;
+}
+.weathernow {
+  text-align: center;
+  font-size: 40px;
 }
 .description {
   text-align: center;
@@ -92,11 +90,26 @@ li:first-letter {
 .location {
   background-color: rgb(92, 123, 207);
 }
-.current-data {
-  line-height: 25px;
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 19px;
+  text-align: center;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
 .icon {
   display: inline-block;
   height: 60px;
   width: 60px;
 }
+
