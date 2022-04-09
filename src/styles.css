@@ -50,6 +50,7 @@ h5 {
 .search-form {
   display: block;
   margin: 0 auto;
+  text-align: center;
   font-size: 21px;
   font-family: "Poppins", sans-serif;
   padding: 10px;

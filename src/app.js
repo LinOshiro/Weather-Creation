@@ -1,7 +1,7 @@
 function updateDateTime(timestamp) {
   let todaysDate = new Date();
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[todaysDate.getDay()];
 
   let months = [
@@ -24,7 +24,7 @@ function updateDateTime(timestamp) {
   let date = todaysDate.getDate();
   let hour = todaysDate.getHours();
   if (hour < 10) {
-    hour = `0{hours}`;
+    hour = `0{hour}`;
   }
   let minutes = todaysDate.getMinutes();
   if (minutes < 10) {
@@ -90,6 +90,7 @@ function searchCity(event) {
 let searchCityForm = document.querySelector("#search-city");
 searchCityForm.addEventListener("submit", searchCity);
 
+
 function showPositionWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -124,3 +125,5 @@ function getPosition(event) {
 }
 let showPositionButton = document.querySelector("#current-location");
 showPositionButton.addEventListener("click", getPosition);
+
+search("Los Angeles");
